@@ -1,0 +1,3 @@
+[submodule "src/github.com/dougm/goflymake"]
+	path = src/github.com/dougm/goflymake
+	url = git@github.com:dougm/goflymake
