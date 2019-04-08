@@ -1,3 +1,6 @@
 [submodule "src/github.com/dougm/goflymake"]
 	path = src/github.com/dougm/goflymake
 	url = git@github.com:dougm/goflymake
+[submodule "src/github.com/nsf/gocode"]
+	path = src/github.com/nsf/gocode
+	url = git@github.com:nsf/gocode
