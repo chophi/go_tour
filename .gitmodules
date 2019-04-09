@@ -4,3 +4,6 @@
 [submodule "src/github.com/nsf/gocode"]
 	path = src/github.com/nsf/gocode
 	url = git@github.com:nsf/gocode
+[submodule "src/github.com/rogpeppe/godef"]
+	path = src/github.com/rogpeppe/godef
+	url = git@github.com:rogpeppe/godef.git
