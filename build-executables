@@ -18,6 +18,7 @@ declare -A bin_package_map=(
     ["godef"]="github.com/rogpeppe/godef"
     ["goflymake"]="github.com/dougm/goflymake"
     ["goimports"]="golang.org/x/tools/cmd/goimports"
+    ["gopls"]="golang.org/x/tools/cmd/gopls"
     ["godoc"]="golang.org/x/tools/cmd/godoc"
     ["gotype"]="golang.org/x/tools/cmd/gotype"
     ["gorename"]="golang.org/x/tools/cmd/gorename"
