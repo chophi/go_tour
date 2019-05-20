@@ -1,0 +1,35 @@
+#!/bin/bash
+
+function build-if-not-exist {
+    local output=$1
+    local package=$2
+    if ! [ -e bin/$output ]; then
+        go build -o bin/$output $package
+    else
+        echo "bin/$output already exist!"
+    fi
+}
+
+git submodule init
+git submodule update
+
+declare -A bin_package_map=(
+    ["gocode"]="github.com/nsf/gocode"
+    ["godef"]="github.com/rogpeppe/godef"
+    ["goflymake"]="github.com/dougm/goflymake"
+    ["goimports"]="golang.org/x/tools/cmd/goimports"
+    ["godoc"]="golang.org/x/tools/cmd/godoc"
+    ["gotype"]="golang.org/x/tools/cmd/gotype"
+    ["gorename"]="golang.org/x/tools/cmd/gorename"
+    ["guru"]="golang.org/x/tools/cmd/guru"
+    ["tour"]="golang.org/x/tour"
+    ["golint"]="golang.org/x/lint/golint"
+    ["errcheck"]="github.com/kisielk/errcheck"
+    ["unconvert"]="github.com/mdempsky/unconvert"
+    ["megacheck"]="honnef.co/go/tools/cmd/megacheck"
+    ["staticcheck"]="honnef.co/go/tools/cmd/staticcheck"
+)
+
+for k in ${!bin_package_map[@]}; do
+    build-if-not-exist $k ${bin_package_map[$k]}
+done

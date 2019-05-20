@@ -7,3 +7,21 @@
 [submodule "src/github.com/rogpeppe/godef"]
 	path = src/github.com/rogpeppe/godef
 	url = git@github.com:rogpeppe/godef.git
+[submodule "src/golang.org/x/lint"]
+	path = src/golang.org/x/lint
+	url = git@github.com:golang/lint.git
+[submodule "src/github.com/kisielk/errcheck"]
+	path = src/github.com/kisielk/errcheck
+	url = git@github.com:kisielk/errcheck
+[submodule "src/github.com/mdempsky/unconvert"]
+	path = src/github.com/mdempsky/unconvert
+	url = git@github.com:mdempsky/unconvert
+[submodule "src/honnef.co/go/tools"]
+	path = src/honnef.co/go/tools
+	url = git@github.com:dominikh/go-tools
+[submodule "src/github.com/BurntSushi/toml"]
+	path = src/github.com/BurntSushi/toml
+	url = git@github.com:BurntSushi/toml
+[submodule "src/golang.org/x/text"]
+	path = src/golang.org/x/text
+	url = git@github.com:golang/text
